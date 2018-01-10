@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+ <head> 
+   <title> Data Page </title>
+   <meta charset = "utf-8">
+</head> 
+   <body onload="fetchAll()">
+    <form class ="entry" >
+        <div>
+        <div> name: <input id ="name" type ="text" placeholder = "name"> </div>
+         <div> city: <input id = "city_name" type ="text" placeholder ="city"></div>
+        <div><button id ="submit" type="button" onclick = "add()" >add</button> </div>  
+        </div>  
+   </form>
+
+<button  type="button" onclick = "lout()" >logout</button> 
+<button id ="profile" type="button" onclick = "profile()" >profile</button> 
+
+<div>
+  <table border="1px" width="60%" >  
+    <thead>
+   <tr> 
+     <td>Name</td> 
+     <td>City</td>
+     <td> delete</td>
+     <td>  edit</td>
+     <td>  update</td>
+    </tr>
+  
+  </thead>
+      <tbody  id = "table_entries" >
+    </tbody>
+
+    </table>
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">   </script>    
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>  
+
+    
+</body>
+
+
+<script  src= "javascripts/add.js">  </script>
+<script  src= "javascripts/delete.js">  </script>
+<script  src= "javascripts/update.js">  </script>
+<script  src= "javascripts/logout.js">  </script>
+<script  src= "javascripts/profile.js">  </script>
+<script  src= "javascripts/fetch.js">   </script>
+
+
+
+</html>

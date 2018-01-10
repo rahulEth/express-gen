@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>        
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+ <head> 
+<title> Data Page </title>
+<meta charset = "utf-8">
+<!-- <link rel = "stylesheet" type = "text/css" href = "login.css"     > 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+ -->
+
+   
+
+</head> 
+<body>
+    <!-- <div class = "container">  </div>  -->
+    
+<form class ="entry" >
+        <div class = "entry1">
+        <div   >
+        name: <input id ="name" type ="text" placeholder = "name">  
+       </div>
+         <div  >
+       city: <input id = "city_name" type ="text" placeholder ="city"> 
+        </div>
+        <div>
+                <button id ="submit" type="button" onclick = "add()" >add</button>
+        </div>
+        
+         
+      </div>
+    
+      </form>
+
+<button  type="button" onclick = "lout()" >logout</button> 
+        
+        
+ <button id ="profile" type="button" onclick = "profile()" >profile</button> 
+
+<br>
+<br>
+<br>
+
+<div>
+  <table border="1px" width="60%" >  
+    <thead>
+   <tr> 
+     <td>Name</td> 
+     <td>City</td>
+     <td> delete</td>
+     <td>  update </td>
+    </tr>
+  
+  </thead>
+      <tbody  id = "table_entries" >
+    </tbody>
+
+    </table>
+
+
+  </div>
+
+
+    
+</body>
